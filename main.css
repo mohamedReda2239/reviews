@@ -1,0 +1,204 @@
+
+/*-Global variables-*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    list-style-type: none;
+    font-size: 16px;
+    /* border: 1px dotted red; */
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    height: 100vh;
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    margin: 0px auto;
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+:root {
+    --main-color: hsl(209, 61%, 16%);
+    --second-color: #49a6e9;
+    --text-color: #617d98;
+}
+/*-Global variables-*/
+
+/* media queries */
+    /* Small */
+    @media (min-width: 768px) {
+        .container {
+            width: 750px;
+        }
+    }
+/* Medium */
+        @media (min-width: 992px) {
+            .container {
+                width: 970px;
+            }
+        }
+/* Large */
+    @media (min-width: 1200px) {
+        .container {
+            width: 1170px;
+        }
+    }
+/* media queries */
+
+
+/*body*/
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(205, 100%, 96%);
+}
+/*body*/
+
+/*headin*/
+.main .container{
+    text-align: center;
+}
+.main .container h1 {
+    font-size: 30px;
+    font-size: 40px;
+    letter-spacing: 4px;
+    color: var(--main-color);
+    position: relative;
+    padding: 5px 0px;
+}
+.main .container h1::before {
+    content: "";
+    background-color: var(--second-color);
+    height: 4px;
+    width: 70px;
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+/*headin*/
+
+/*review*/
+    /* image*/
+    .main .container .review {
+        background-color: white;
+        box-shadow: 0px 0px 96px -15px #b3b3b3;
+        margin-top: 30px;
+        padding: 30px 0px 20px;
+    }
+    .main .container .review .image {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        padding: 5px;
+    }
+    .main .container .review .image .person {
+        width: 130px;
+        height: 130px;
+        border-radius: 50%;
+        object-fit: cover;
+        position: relative;
+        display: block;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+    }
+    .main .container .review .image .blue-circle {
+        content: "";
+        position: absolute;
+        bottom: 8px;
+        left: calc(50% + 8px);
+        transform: translateX(-50%);
+        height: 130px;
+        width: 130px;
+        background-color: var(--second-color);
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+    }
+    .main .container .review .image .quote {
+        position: absolute;
+        z-index: 0;
+        background-color: var(--second-color);
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        padding: 9px;
+        top: 8px;
+        left: 50%;
+        transform: translateX(-67px);
+    }
+    /* image*/
+    /*data*/
+    .main .container .review .name {
+        font-size: 17px;
+        letter-spacing: 3px;
+        word-spacing: 0.5px;
+        margin: 4px 0px;
+        color: var(--main-color);
+    }
+    .main .container .review .job {
+        font-size: 13px;
+        text-transform: uppercase;
+        font-weight: 400;
+        color: var(--second-color);
+        margin-bottom: 10px;
+    }
+    .main .container .review .text {
+        padding: 11px 250px;
+        color: var(--text-color);
+        line-height: 25px;
+    }
+    /*data*/
+    /*buttons*/
+    .main .container .review .buttons {
+        padding: 15px;
+    }
+    .main .container .review .buttons .moving-buttons {
+        margin-bottom: 5px;
+    }
+    .main .container .review .buttons .moving-buttons button,
+    .main .container .review .buttons .random-button {
+        background-color: transparent;
+        border: none;
+        color: var(--second-color);
+        font-size: 19px;
+    }
+    .main .container .review .buttons .moving-buttons button:hover,
+    .main .container .review .buttons .random-button:hover {
+        color: #076db6;
+        border-color: #076db6;
+    }
+    .main .container .review .buttons .moving-buttons button:active,
+    .main .container .review .buttons .random-button:active {
+        color: #084c7c;
+        border-color: #084c7c;
+    }
+    .main .container .review .buttons .random-button {
+        border: 1px solid var(--second-color);
+        padding: 5px 8px;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+}
+    /*buttons*/
+
+/*review*/
